@@ -38,18 +38,21 @@ function App() {
     setNewTaskText(event.target.value);
   }
 
-  function deleteTask(idDeleted: string) {
+  function deleteTask(id: string) {
 
     const taskWithoutDeleted = tasks.filter(task => {
-      return task.id !== idDeleted
+      return task.id !== id
     })
 
     setTasks(taskWithoutDeleted)
   }
 
-  function changeValueIsCompleted(idDeleted: string, checked: boolean) {
-    const newValueIsCompleted = tasks.map(tasks => {
-      return tasks.id === idDeleted ? { ...tasks, isCompleted: checked } : tasks
+  function toggleTaskCompletion(taskId: string, checked: boolean) {
+
+    const newValueIsCompleted = tasks.map(({ id, ...rest }) => {
+      return id === taskId
+        ? { ...rest, id, isCompleted: checked }
+        : { id, ...rest }
     })
 
     setTasks(newValueIsCompleted)
@@ -79,7 +82,9 @@ function App() {
               placeholder="Adicione uma nova tarefa"
               value={newTaskText}
             />
-            <button className={styles.taskInputButton}>Criar<img src={plus} /></button>
+            <button className={styles.taskInputButton}>
+              Criar <img src={plus} alt="Adicionar tarefa" />
+            </button>
           </form>
           <div className={styles.taskListContainer}>
             <header className={styles.taskListHeader}>
@@ -88,8 +93,8 @@ function App() {
             </header>
             <div className={styles.taskListCreate}>
               {
-                tasks.length > 0 ?
-                  (
+                tasks.length > 0
+                  ? (
                     tasks.map(task => {
                       return (<TaskList
                         key={task.id}
@@ -97,12 +102,11 @@ function App() {
                         content={task.title}
                         onDeleteTask={deleteTask}
                         isChecked={task.isCompleted}
-                        onChangeValueisCompleted={changeValueIsCompleted}
+                        onToggleTaskCompletion={toggleTaskCompletion}
                       />
                       )
                     })
-                  ) :
-                  (
+                  ) : (
                     <div className={styles.taskListContent}>
                       <img src={clipboard} />
                       <div className={styles.contentListText}>

@@ -7,15 +7,15 @@ interface TaskListProps {
     onDeleteTask: (id: string) => void,
     isChecked: boolean,
     id: string,
-    onChangeValueisCompleted: (id: string, checked: boolean) => void;
+    onToggleTaskCompletion: (id: string, checked: boolean) => void;
 }
 
-export function TaskList({ content, onDeleteTask, isChecked, id, onChangeValueisCompleted }: TaskListProps) {
+export function TaskList({ content, onDeleteTask, isChecked, id, onToggleTaskCompletion }: TaskListProps) {
     const [checked, setChecked] = useState(isChecked)
 
     function handleInputTask(event: ChangeEvent<HTMLInputElement>) {
         setChecked(event.target.checked)
-        onChangeValueisCompleted(id, event.target.checked)
+        onToggleTaskCompletion(id, event.target.checked)
     }
 
     function handleDeleteTask() {
