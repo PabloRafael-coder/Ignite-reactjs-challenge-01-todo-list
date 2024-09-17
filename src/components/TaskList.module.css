@@ -1,0 +1,96 @@
+
+.taskElementContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 1rem;
+    height: 72px;
+    border-radius: 8px;
+    background: var(--gray-500);
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.inputContainer input {
+    appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17.45px;
+    height: 17.45px;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+    position: relative;
+    background: var(--gray-700);
+    cursor: pointer;
+}
+
+.inputContainer input:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30,111,159, 0.2);
+}
+
+.inputContainer input:checked::before{
+    content: '';
+    width: 17.45px;
+    height: 17.45px;
+    border-radius: 50%;
+    position: absolute;
+    background: var(--purple-dark);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../assets/Vector.svg');
+    border: none;
+}
+
+.inputContainer input:hover:checked::before{
+    background: var(--purple);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../assets/Vector.svg');
+}
+
+.textContainer {
+    width: 100%;
+}
+
+.textContainer .textWithoutDecorate {
+    width: 100%;
+    line-height: 140%;
+    font-size: 14px;
+    color: var(--gray-100);
+}
+
+.textContainer .textDecorate {
+    width: 100%;
+    line-height: 140%;
+    font-size: 14px;
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+.trashContainer {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+    border-radius: 4px;
+    color: var(--gray-300);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.trashContainer:hover {
+    background: var(--gray-400);
+    color: var(--danger);
+}

@@ -1,0 +1,138 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    height: 12.5rem;
+    background: var(--gray-700);
+}
+
+.headerTitle {
+    color: var(--blue);
+    font-weight: 800;
+}
+
+.headerTitle span {
+    color: var(--purple-dark);
+}
+
+.taskInputContainer {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: -25px;
+}
+
+.taskInput {
+    width: 39.87rem;
+    height: 54px;
+    padding: 1rem;
+
+    background: var(--gray-500);
+    color: var(--gray-100);
+
+    font-size: 1rem;
+    line-height: 140%;
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+}
+
+.taskInput:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 1px var(--purple-dark)
+}
+
+.taskInputButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 1rem;
+
+    font-weight: bold;
+    background: var(--blue-dark);
+    color: var(--gray-100);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.taskInputButton:hover {
+    background: var(--blue)
+}
+
+.taskListContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    gap: 1.5rem
+}
+
+.taskListCreate {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    max-width: 46rem;
+}
+
+.taskListHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.taskListContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+    padding: 64px 24px;
+}
+
+.headerTextCreated {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.headerTextCreated span {
+    font-size: 12px;
+    margin-left: 8px;
+    padding: 2px 8px;
+    
+    background: var(--gray-400);
+    border-radius: 10px;
+    color: var(--gray-200);
+}
+
+.headerTextCompleted {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--purple);
+}
+
+.headerTextCompleted span {
+    font-size: 12px;
+    margin-left: 8px;
+    padding: 2px 8px;
+    
+    background: var(--gray-400);
+    border-radius: 10px;
+    color: var(--gray-200);
+}
+
+.contentListText {
+    color: var(--gray-300);
+}
+
+.taskListText {
+    font-weight: 700;
+}
