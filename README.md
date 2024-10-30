@@ -1,17 +1,16 @@
 # To-Do List com React e TypeScript
 ## 📋 Descrição
-Este é um projeto de lista de tarefas (to-do list) desenvolvido com React e TypeScript. Ele permite que usuários adicionem, editem, excluam e marquem tarefas como concluídas, oferecendo uma experiência de organização simples e intuitiva.
+Este é um projeto de lista de tarefas (to-do list) desenvolvido com React e TypeScript. Ele permite que usuários adicionem, excluam e marquem tarefas como concluídas, oferecendo uma experiência de organização simples e intuitiva.
 
 ## 🛠️ Tecnologias Utilizadas
 React - Biblioteca para construção da interface do usuário.
 TypeScript - Superset de JavaScript com tipagem estática.
-CSS Modules (ou Styled-components, caso tenha usado) - Estilização do layout.
+CSS Modules - Estilização do layout.
 React Hooks - Para manipulação de estado e efeitos.
 
 ## 🚀 Funcionalidades
 Adicionar tarefa: Permite ao usuário criar uma nova tarefa.
 Marcar como concluída: Permite marcar uma tarefa como concluída/desmarcada.
-Editar tarefa: Possibilita a edição de uma tarefa existente.
 Excluir tarefa: Remove uma tarefa da lista.
 
 ## 📚 Aprendizados e Desafios
