@@ -1,50 +1,28 @@
-# React + TypeScript + Vite
+# To-Do List com React e TypeScript
+## 📋 Descrição
+Este é um projeto de lista de tarefas (to-do list) desenvolvido com React e TypeScript. Ele permite que usuários adicionem, editem, excluam e marquem tarefas como concluídas, oferecendo uma experiência de organização simples e intuitiva.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🛠️ Tecnologias Utilizadas
+React - Biblioteca para construção da interface do usuário.
+TypeScript - Superset de JavaScript com tipagem estática.
+CSS Modules (ou Styled-components, caso tenha usado) - Estilização do layout.
+React Hooks - Para manipulação de estado e efeitos.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
+Adicionar tarefa: Permite ao usuário criar uma nova tarefa.
+Marcar como concluída: Permite marcar uma tarefa como concluída/desmarcada.
+Editar tarefa: Possibilita a edição de uma tarefa existente.
+Excluir tarefa: Remove uma tarefa da lista.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📚 Aprendizados e Desafios
+Durante o desenvolvimento deste projeto, aprofundei conhecimentos em:
 
-## Expanding the ESLint configuration
+Tipagem com TypeScript para hooks e componentes no React.
+Gerenciamento de estado e atualização dinâmica de listas.
+Validação de dados e controle de formulário para garantir uma experiência de usuário consistente.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🤝 Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+📄 Licença
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
