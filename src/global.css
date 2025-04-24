@@ -1,4 +1,3 @@
-
 :root {
     --gray-100: #f2f2f2;
     --gray-200: #d9d9d9;
@@ -14,6 +13,12 @@
     --purple: #8284f4;
 
     --danger: #e25858;
+
+    --font-sm: 0.75rem
+    --font-md: 0.875rem
+    --font-lg: 1rem
+
+    --font-bold: bold
 }
 
 * {
