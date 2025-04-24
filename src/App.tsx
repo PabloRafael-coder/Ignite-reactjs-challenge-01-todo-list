@@ -65,10 +65,7 @@ function App() {
 
   return (
     <>
-      <header className={styles.header}>
-        <img src={rocket} alt="imagem de um foguete" />
-        <h1 className={styles.headerTitle}>to<span>do</span></h1>
-      </header>
+    <Header/>
       <main>
       <Header />
         <section>
