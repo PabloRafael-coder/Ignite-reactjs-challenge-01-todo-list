@@ -7,8 +7,8 @@ import plus from './assets/plus.svg';
 import clipboard from './assets/Clipboard.svg'
 
 import styles from './App.module.css'
-import "./global.css"
-
+import './global.css'
+import { Header } from './components/Header'
 
 interface Tasks {
   id: string;
@@ -70,6 +70,7 @@ function App() {
         <h1 className={styles.headerTitle}>to<span>do</span></h1>
       </header>
       <main>
+      <Header />
         <section>
           <form
             onSubmit={handleCreateNewTask}
