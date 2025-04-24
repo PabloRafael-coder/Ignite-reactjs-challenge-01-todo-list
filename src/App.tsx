@@ -2,9 +2,7 @@ import { ChangeEvent, FormEvent, useState } from 'react'
 import { TaskList } from './components/TaskList'
 import { v4 as uuid4 } from 'uuid'
 
-import rocket from './assets/rocket.svg'
 import plus from './assets/plus.svg'
-import clipboard from './assets/Clipboard.svg'
 
 import styles from './App.module.css'
 import './global.css'
